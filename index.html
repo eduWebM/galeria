@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Galería de Arte</h1>
+    <main class="slider-main">
+        <section class="carousel-container">
+            <article class="carousel-slide">
+                <a href="" target="_blank">
+                    <img src="imagenes/el-guernica.jpg" alt="El Guernica">
+                    <div class="article">            
+                        <h2 class="title">El Guernica</h2>
+                        <p class="text">Pablo Ruiz Picasso</p>
+                    </div> 
+                </a>
+            </article>
+            <article class="carousel-slide carousel-image-2">
+                <a href="" target="_blank">
+                    <img src="imagenes/el-grito.jpg" alt="El Grito">
+                    <div class="article">
+                        <h2 class="title">El Grito</h2>
+                        <p class="text">Edvard Munch</p>
+                    </div> 
+                </a>            
+            </article>
+            <article class="carousel-slide carousel-image-3">
+                <a href="" target="_blank">
+                    <img src="imagenes/girasoles.jpg" alt="Girasoles">
+                    <div class="article">  
+                        <h2 class="title">Girasoles</h2>
+                        <p class="text">Vincent Van Gogh</p>
+                    </div> 
+                </a>
+            </article>
+            <article class="carousel-slide carousel-image-4">
+                <a href="" target="_blank">
+                    <img src="imagenes/fusilamientos-del-2-de-mayo.jpg" alt="Fusilamientos del 2 de Mayo">
+                    <div class="article">   
+                        <h2 class="title">Fusilamientos del 2 de Mayo</h2>
+                        <p class="text">Francisco de Goya</p>
+                    </div> 
+                </a>      
+            </article>
+            <article class="carousel-slide carousel-image-5">
+                <a href="" target="_blank">
+                    <img src="imagenes/la-gioconda.jpg" alt="La Gioconda">
+                    <div class="article">   
+                        <h2 class="title">La Gioconda</h2>
+                        <p class="text">Leonardo da Vinci</p>
+                    </div> 
+                </a>      
+            </article>
+            <article class="carousel-slide carousel-image-6">
+                <a href="" target="_blank">
+                    <img src="imagenes/las-meninas.webp" alt="Las Meninas">
+                    <div class="article">   
+                        <h2 class="title">Las Meninas</h2>
+                        <p class="text">Diego Velázquez</p>
+                    </div> 
+                </a>      
+            </article> 
+            <article class="carousel-slide carousel-image-6">
+                <a href="" target="_blank">
+                    <img src="imagenes/el-nacimiento-de-venus.jpg" alt="El Nacimiento de Venus">
+                    <div class="article">   
+                        <h2 class="title">El Nacimiento de Venus</h2>
+                        <p class="text">Botticelli</p>
+                    </div> 
+                </a>      
+            </article>
+            <article class="carousel-slide carousel-image-6">
+                <a href="" target="_blank">
+                    <img src="imagenes/la-joven-de-la-perla.webp" alt="La Joven de la Perla">
+                    <div class="article">   
+                        <h2 class="title">La Joven de la Perla</h2>
+                        <p class="text">Johannes Vermeer</p>
+                    </div> 
+                </a>      
+            </article> 
+            <article class="carousel-slide carousel-image-6">
+                <a href="" target="_blank">
+                    <img src="imagenes/la-noche-estrellada.jpg" alt="La Noche Estrellada">
+                    <div class="article">   
+                        <h2 class="title">La Noche Estrellada</h2>
+                        <p class="text">Vincent Van Gogh</p>
+                    </div> 
+                </a>      
+            </article>
+            <article class="carousel-slide carousel-image-6">
+                <a href="" target="_blank">
+                    <img src="imagenes/la-maja-desnuda.webp" alt="La Maja Desnuda">
+                    <div class="article">   
+                        <h2 class="title">La Maja Desnuda</h2>
+                        <p class="text">Francisco de Goya</p>
+                    </div> 
+                </a>      
+            </article>      
+        </section>
+        <div class="container-flechas">
+            <div class="arrow-left"><i class="bi bi-caret-left-fill"></i></div>
+            <img src="imagenes/galeria.png" alt="Botón Galería" id="btn-gallery">
+            <dialog class="modal-gallery">
+                <div class="contain-gallery">
+                    <img src="imagenes/el-guernica.jpg" alt="El Guernica" class="img-dialog" data-image="1">
+                    <img src="imagenes/el-grito.jpg" alt="El Grito" class="img-dialog" data-image="2">
+                    <img src="imagenes/girasoles.jpg" alt="Girasoles" class="img-dialog" data-image="3">
+                    <img src="imagenes/fusilamientos-del-2-de-mayo.jpg" alt="Fusilamientos del 2 de Mayo" class="img-dialog" data-image="4">
+                    <img src="imagenes/la-gioconda.jpg" alt="La Gioconda" class="img-dialog" data-image="5">
+                    <img src="imagenes/las-meninas.webp" alt="Las Meninas" class="img-dialog" data-image="6">
+                    <img src="imagenes/el-nacimiento-de-venus.jpg" alt="El Nacimiento de Venus" class="img-dialog" data-image="7">
+                    <img src="imagenes/la-joven-de-la-perla.webp" alt="La Joven de la Perla" class="img-dialog" data-image="8">
+                    <img src="imagenes/la-noche-estrellada.jpg" alt="La Noche Estrellada" class="img-dialog" data-image="9">
+                    <img src="imagenes/la-maja-desnuda.webp" alt="La Maja Desnuda" class="img-dialog" data-image="10">
+                </div>
+                <span class="close">X</span>
+            </dialog>
+            <div class="arrow-right"><i class="bi bi-caret-right-fill"></i></div>
+        </div>
+    </main>
+    <script src="js/index.js" type="module" defer></script>
+</body>
+</html>

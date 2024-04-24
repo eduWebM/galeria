@@ -62,7 +62,7 @@ h1{
     position: relative;
 }
 
-.article{
+.contain-text{
     position: absolute;
     top: 0;
     left: 15%;

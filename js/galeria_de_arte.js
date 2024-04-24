@@ -1,4 +1,4 @@
-export default function galeriaArte(imgActual, carouselContainer, arrowLeft, arrowRight, btnGallery, close, imgDialog) {
+export default function galeriaArte(imgActual, carouselContainer, carouselSlide, arrowLeft, arrowRight, btnGallery, close, imgDialog) {
     const d = document;
     // Ancho total incluyendo el contenido desplazado
     const anchoTotal = d.querySelector(carouselContainer).scrollWidth;
@@ -23,6 +23,11 @@ export default function galeriaArte(imgActual, carouselContainer, arrowLeft, arr
         });          
         // Detecto cambios en la resolución de pantalla del dispositivo (por ejemplo en móviles cuando se voltea la pantalla)
         observarCambioDeTamano.observe(d.querySelector(carouselContainer));
+
+        // Si se hace clic sobre el elemento contenedor del texto de la imagen, cancelo el evento de abrir una nueva pestaña. Esto se puede cambiar según las necesidades de cada uno.
+        if(e.target.matches(carouselSlide) || e.target.matches(`${carouselSlide} *`)){
+            e.preventDefault();
+        }
 
         if(e.target.matches(arrowLeft) || e.target.matches(`${arrowLeft} *`)) {
             d.querySelector(carouselContainer).scrollBy({ left: -anchoVisible, behavior: 'smooth' });

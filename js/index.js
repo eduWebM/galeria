@@ -4,5 +4,5 @@ let imgActual = 1; // variable global donde guardo la imagen que estoy visualiza
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => { // carga del documento HTML (DOM)
-    galeriaArte(imgActual, ".carousel-container", ".arrow-left", ".arrow-right", "#btn-gallery", ".close", ".img-dialog");
+    galeriaArte(imgActual, ".carousel-container", ".carousel-slide", ".arrow-left", ".arrow-right", "#btn-gallery", ".close", ".img-dialog");
 })
